@@ -13,4 +13,12 @@ def conexao(endereco, usuario, senha, bancodedados):
         print(f"Erro ao tentar se conectar ao banco de dados: {err}")
         return None
     
+def fecharConexao(connection):
+    if connection:
+        connection.close()
+
+def adicionarLivro(connection):
+    cursor = connection.cursor()
+        
+    
 
