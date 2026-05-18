@@ -1,5 +1,4 @@
 # SGBD usado = mySQL
-# em andamento
 
 CREATE TABLE USUARIOS (
 	ID INT AUTO_INCREMENT PRIMARY KEY,
