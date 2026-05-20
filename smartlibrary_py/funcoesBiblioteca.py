@@ -19,3 +19,13 @@ def encerrarConexao(connection):
     if connection:
         connection.close()
         
+def cadastrarLivro(connection, SQL):
+    
+    cursor = connection.cursor(prepared=True)
+    
+    SQL = "INSERT INTO LIVROS(NOME, AUTOR, ISBN, DATAPUBLICACAO) VALUES(%s,%s,%s,%s)"
+    
+    dados = "A vida intelectual ,Antonin Dalmace Sertilenges, 9788539901890, 09/03/1920"
+    
+    
+        
